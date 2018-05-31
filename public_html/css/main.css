@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Author's custom styles Mairelis Arroyo
+   ========================================================================== */
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: auto;
+    background-color: #F8F8FF;
+    width: 100%;
+}
+/*header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    background-color: #F8F8FF;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}*/
+.divImagenHeader{
+    position: relative;
+    float: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: inline-block;
+    width: auto;
+    margin: 20px;
+}
+.divTituloHeader{
+    position: relative;
+    float: left;
+   /* padding-left: 100px;
+    padding-right: 100px;
+    display: inline-block;
+    width: auto;
+    margin: 20px;*/
+}
+/*
+position: relative;
+	background-color: white;
+	float: left;
+
+border: 1px;
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    padding: 20px, 20px;
+    text-align: justify;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
