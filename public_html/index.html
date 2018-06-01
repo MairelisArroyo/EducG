@@ -5,34 +5,159 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">
+        
         <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-         
+        
+        <link rel="stylesheet" href="css/bootstrap.css" media="all" />
+        
+        <link rel="stylesheet" href="css/main.css" media="all" />
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        
+        <!--Archivo CSS de Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <!--jQuery para que funcione bootstrap.min.js-->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        
+        <!--JavaScript de Bootstrap-->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        <!--librería angular.js-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         
         <title>cepe-educ</title>
+        
+
     </head>    
       
     <body>
-        <header class= "navbar-header">
-            <div class="divTituloHeader">
-                <h1>CEPE</h1>
-                <h2>Control y Evaluaci&oacute;n del Proceso Escolar</h2>
-            </div> 
-           <div class="divImagenHeader">
-                <img src="img/BanderaRD2.jpg" width="150" height="150" alt="BanderaRD"/>
-            </div>
-                      
+        <header>
+           <h1>CEPE <br> <small>Control y Evaluaci&oacute;n del Proceso Escolar</small></h1>
+           <figure><img src="img/Escuela.png" width="250" height="100" alt="Escuela"/></figure>
         </header>
         
-        <nav class="navbar-header">
-           <!-- -->
-        </nav>
-        
+        <!--Barra de navegacion con bootstrap-->
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar-1">
+                            <span class="sr-only">Men&uacute;</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">Inicio</a>                        
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-1">
+                        <ul class="nav navbar-nav">
+                             <li class="dropdown"> 
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sobre Nosotros <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a>Historia</li>
+                                    <li><a href="#"></a>Perfil Institucional</li>
+                                    <li><a href="#"></a>Docentes</li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"></a>Reclutamiento</li>
+                                </ul>
+                            </li>
+                        </ul>  
+                        <ul class="nav navbar-nav">
+                             <li class="dropdown"> 
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alumnos <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a>Admisi&oacute;n</li>
+                                </ul>
+                            </li>
+                        </ul>
+                         <ul class="nav navbar-nav">
+                             <li class="dropdown"> 
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Material Did&aacute;ctico <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a>Curr&iacute;culo</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                             <li class="dropdown"> 
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacto <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"></a>Enviar Mensaje</li>
+                                    <li><a href="#"></a>Contacto Telef&oacute;nico</li>
+                                    <li><a href="#"></a>Direcci&oacute;n</li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"></a>&iquest;C&oacute;mo llega&#63;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>  
         <footer>
-            <p>&copy; MAAB 2018</p>
+            <p>Copyright &copy; MAAB 2018</p>
         </footer>
     </body>
 </html>
+
+<!--       <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        
+        <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla
+        <meta name="viewport" content="width=device-width, initial-scale=1">-->
+        
+        <!--CSS personalizado
+        <link rel="stylesheet" href="css/main.css">-->
+        
+        <!--Archivo CSS de Bootstrap
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        
+        <!--jQuery para que funcione bootstrap.min.js
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+        
+        <!--JavaScript de Bootstrap-->
+        <!--<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+        
+        <!--librería angular.js-->
+       <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        
+        <title>cepe-educ</title>
+        
+         <style>
+            body {
+                padding-top: 200px;
+            }
+        </style>-->
+
+
+<!--    <header id="cabecera" class="container-fluid">
+          
+        </header>
+        
+            <div>
+               <img src="img/Escuela.png" width="150" height="150" alt="Escuela"/>
+            </div> 
+            <div class="divTituloHeader">
+                <h1>CEPE <br> <small>Control y Evaluaci&oacute;n del Proceso Escolar</small></h1>
+            </div>
+        
+        <!-- The social media icon bar -->
+        <!-- <div class="icon-bar">
+             <a href="http://facebook.com/mairelisa.arroyob" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
+             <a href="www.linkedin.com/in/mairelis-alexandra-arroyo-burgos-0a500695" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+       
+        <footer>
+            <p>&copy; MAAB 2018</p>
+        </footer>-->

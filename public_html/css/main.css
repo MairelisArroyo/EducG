@@ -1,24 +1,119 @@
 /* ==========================================================================
    Author's custom styles Mairelis Arroyo
    ========================================================================== */
-header {
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: auto;
-    background-color: #F8F8FF;
-    width: 100%;
+@charset "UTF-8";
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:none;
+    position: relative;
 }
-/*header {
-    background-position: center;
+div.container {
+    width: 100%;
+    border: 5px solid gray;
+}
+header {
+    background-color: #F8F8FF;
+    color: #E9967A;
+    clear: left;
+    text-align: center;
+    background-position: top;
+    padding: 1em;
+    
+}
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    bottom: 0;
+}
+nav {
+    float: left;
+    max-width: 250px;
+    margin: 0;
+    padding: 1em;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}  
+nav ul a {
+    text-decoration: none;
+}
+
+/*header{
+    background-color: #F8F8FF;
+    color: #F8F8FF;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;*/
+   /* background-position: top;
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+   
+   position: absolute; /*(o relative, según tu diseño)*/
+
+/*/
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}  
+nav ul a {
+    text-decoration: none;
+}
+
+/*
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>*/
+
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+/*{
+  padding: 0;
+  margin: 0;
+}
+ */
+/*==========Estilo Header========================*/
+/*header{
     background-color: #F8F8FF;
+    color: #F8F8FF;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;*/
+   /* background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 100px;
+    
     width: 100%;
     height: auto;
     margin: 0px auto;
 }*/
+/*.divTituloHeader{
+    position: relative;
+    float: left;
+}
 .divImagenHeader{
     position: relative;
     float: left;
@@ -28,39 +123,50 @@ header {
     width: auto;
     margin: 20px;
 }
-.divTituloHeader{
-    position: relative;
-    float: left;
-   /* padding-left: 100px;
-    padding-right: 100px;
-    display: inline-block;
-    width: auto;
-    margin: 20px;*/
-}
-/*
-position: relative;
-	background-color: white;
-	float: left;
-
-border: 1px;
-    display: inline-block;
-    width: auto;
-    margin: auto;
-    padding: 20px, 20px;
-    text-align: justify;
+footer {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #8C1227;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
 }*/
 
+/*============Barra Redes Sociales==========================*/
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+/*.icon-bar {
+  position: fixed;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}*/
 
+/* Style the icon bar links */
+/*.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
 
+/* Style the social media icons with color, if you want */
+/*.icon-bar a:hover {
+  background-color: #000;
+}
 
+.facebook {
+  background: #3B5998;
+  color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
+.linkedin {
+  background: #007bb5;
+  color: white;
+}*/
+/*================Estilo Menu Opciones==================================*/
