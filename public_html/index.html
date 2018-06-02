@@ -4,39 +4,37 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="">
-        
+        <meta name="description" content="">        
         <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="css/bootstrap.css" media="all" />
-        
-        <link rel="stylesheet" href="css/main.css" media="all" />
-        
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        
         <!--Archivo CSS de Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">   
+        <link rel="stylesheet" href="css/bootstrap.css"/>
         
+        <link rel="stylesheet" href="css/main.css"/>
+        
+        <!--Estilos del pluggin de iconos-->
+        <link rel="stylesheet" href="icomoon/style.css"/>
+        
+         <!--JavaScript de Bootstrap-->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+       
+       
         
         <!--jQuery para que funcione bootstrap.min.js-->
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        
-        <!--JavaScript de Bootstrap-->
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        
-        <!--librería angular.js-->
+        <!--<script src="http://code.jquery.com/jquery-latest.js"></script>       
+        <!--librería angular.js
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        -->
         
         <title>cepe-educ</title>
-        
-
     </head>    
       
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <header>
            <h1>CEPE <br> <small>Control y Evaluaci&oacute;n del Proceso Escolar</small></h1>
            <figure><img src="img/Escuela.png" width="250" height="100" alt="Escuela"/></figure>
@@ -54,7 +52,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="index.html" class="navbar-brand">Inicio</a>                        
+                        <a href="index.html" class="navbar-brand icon-home" > Inicio </a>                        
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-1">
                         <ul class="nav navbar-nav">
@@ -99,65 +97,25 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>  
+            </nav> <!--Final de la seccion de Barra de navegacion con bootstrap-->
+        </div> 
+       
+        <!--Seccion centro para desplegar las otras paginas-->
+         <section>
+            
+         </section>
+        
+        
+        <!-- Barra Redes Sociales -->
+         <div class="social-bar">
+            <a href="http://facebook.com/mairelisa.arroyob" class="icon icon-facebook" target="_blank"></a>
+            <a href="WebPages/PerfilInstitucional.html" class="icon icon-twitter" target="_blank"></a>
+            <a href="" class="icon icon-youtube" ></a>
+            <a href="" class="icon icon-linkedin"></a>
+        </div> <!-- Final Barra Redes Sociales -->
+
         <footer>
             <p>Copyright &copy; MAAB 2018</p>
         </footer>
     </body>
 </html>
-
-<!--       <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="">
-        
-        <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla
-        <meta name="viewport" content="width=device-width, initial-scale=1">-->
-        
-        <!--CSS personalizado
-        <link rel="stylesheet" href="css/main.css">-->
-        
-        <!--Archivo CSS de Bootstrap
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
-        
-        <!--jQuery para que funcione bootstrap.min.js
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
-        
-        <!--JavaScript de Bootstrap-->
-        <!--<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
-        
-        <!--librería angular.js-->
-       <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        
-        <title>cepe-educ</title>
-        
-         <style>
-            body {
-                padding-top: 200px;
-            }
-        </style>-->
-
-
-<!--    <header id="cabecera" class="container-fluid">
-          
-        </header>
-        
-            <div>
-               <img src="img/Escuela.png" width="150" height="150" alt="Escuela"/>
-            </div> 
-            <div class="divTituloHeader">
-                <h1>CEPE <br> <small>Control y Evaluaci&oacute;n del Proceso Escolar</small></h1>
-            </div>
-        
-        <!-- The social media icon bar -->
-        <!-- <div class="icon-bar">
-             <a href="http://facebook.com/mairelisa.arroyob" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
-             <a href="www.linkedin.com/in/mairelis-alexandra-arroyo-burgos-0a500695" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-        </div>
-       
-        <footer>
-            <p>&copy; MAAB 2018</p>
-        </footer>-->

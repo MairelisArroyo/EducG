@@ -9,19 +9,26 @@
     border:0;
     outline:none;
     position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
 }
+
+.estiloFuente{
+    font-family: "Georgia, Times New Roman, serif";
+}
+
 div.container {
     width: 100%;
     border: 5px solid gray;
 }
+/*==========Estilo Header y footer========================*/
 header {
     background-color: #F8F8FF;
     color: #E9967A;
     clear: left;
     text-align: center;
     background-position: top;
-    padding: 1em;
-    
+    padding: 1em;   
 }
 footer {
     padding: 1em;
@@ -31,6 +38,7 @@ footer {
     text-align: center;
     bottom: 0;
 }
+/*===============Estilo barra de navegacion de los dropdown====================*/
 nav {
     float: left;
     max-width: 250px;
@@ -44,129 +52,59 @@ nav ul {
 nav ul a {
     text-decoration: none;
 }
-
-/*header{
-    background-color: #F8F8FF;
-    color: #F8F8FF;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;*/
-   /* background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: 100px;
-    
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-   
-   position: absolute; /*(o relative, según tu diseño)*/
-
-/*/
-
-nav {
-    float: left;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}  
-nav ul a {
-    text-decoration: none;
-}
-
-/*
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-}
-</style>
-</head>*/
-
-/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
-/*{
-  padding: 0;
-  margin: 0;
-}
- */
-/*==========Estilo Header========================*/
-/*header{
-    background-color: #F8F8FF;
-    color: #F8F8FF;
-    width: 100%;
-    height: auto;
-    margin: 0px auto;*/
-   /* background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: 100px;
-    
-    width: 100%;
-    height: auto;
-    margin: 0px auto;
-}*/
-/*.divTituloHeader{
-    position: relative;
-    float: left;
-}
-.divImagenHeader{
-    position: relative;
-    float: left;
-    padding-left: 100px;
-    padding-right: 100px;
-    display: inline-block;
-    width: auto;
-    margin: 20px;
-}
-footer {
-    color: white;
-    padding-top: 10px;
-    text-align: center;
-    background-color: #8C1227;
-    padding-bottom: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-}*/
-
 /*============Barra Redes Sociales==========================*/
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-/*.icon-bar {
-  position: fixed;
-  top: 30%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}*/
-
-/* Style the icon bar links */
-/*.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
+.social-bar {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    z-index: 100;
+}
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
 }
 
-/* Style the social media icons with color, if you want */
-/*.icon-bar a:hover {
-  background-color: #000;
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+.icon-facebook {
+    background: #2E406E;
 }
 
-.facebook {
-  background: #3B5998;
-  color: white;
+.icon-twitter {
+    background: #339DC5;
 }
 
-.linkedin {
-  background: #007bb5;
-  color: white;
-}*/
-/*================Estilo Menu Opciones==================================*/
+.icon-youtube {
+    background: #E83028;
+}
+
+.icon-instagram {
+    background: #3F60A5;
+}
+.icon-googleplus {
+    background: #3F60A5;
+}
+.icon-linkedin {
+    background: #2E406E;
+}
+.icon-googleplus{
+    background: white;
+}
+
+/*========================================================*/
