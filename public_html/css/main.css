@@ -38,6 +38,11 @@ footer {
     text-align: center;
     bottom: 0;
 }
+.redondeado {
+  border-radius: 5px;
+  background-color: #def;
+}
+
 /*===============Estilo barra de navegacion de los dropdown====================*/
 nav {
     float: left;
@@ -52,9 +57,17 @@ nav ul {
 nav ul a {
     text-decoration: none;
 }
+/*==========Seccion================*/
+section {
+    width: 79%;
+    /*background: #ccc;*/
+    float: left;
+    overflow: auto;
+    padding-bottom: 60px;
+    padding-top:30px;
+}
 /*============Barra Redes Sociales==========================*/
 .social-bar {
-    position: fixed;
     left: 0;
     top: 30%;
     font-size: 1.5rem;
@@ -101,7 +114,7 @@ nav ul a {
     background: #3F60A5;
 }
 .icon-linkedin {
-    background: #2E406E;
+    background: #00a0dc;
 }
 .icon-googleplus{
     background: white;

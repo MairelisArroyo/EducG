@@ -7,32 +7,78 @@ and open the template in the editor.
     Created on : Jun 2, 2018, 4:44:35 AM
     Author     : Mairelis Arroyo
 */
-html,body {
-    height:100%;
-}
 
-header {
-        
-    display:block;
-    background:#286af0;
-    padding:10px 0px;
+/*==========Estilo Header y footer========================*/
+header{
+    background-color: #F8F8FF;
+    color: #E9967A;
+    clear: left;
+    text-align: center;
+    background-position: top;
+    padding: 1em;   
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: justify;
 }
 section {
-    width: 79%;
-    background: #ccc;
+    width: 100%;
+    /*background: #ccc;*/
     float: left;
     overflow: auto;
     padding-bottom: 60px;
     padding-top:30px;
+    position: absolute;
 }
 aside {
     float: right;
-    border: 1px solid red;
     width: 19%;
-    border: 1px solid red;
+    border: 3px solid #ccc;;
     /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
     /*visibility: hidden;*/
 }
 figure {
     display: table; margin: 0 auto;
 }
+.imagenDocentes{
+    width: 100px;
+    height: 100px;
+}
+td{
+     border: 1px solid black;
+}
+.tableDocentes {
+    width: auto;
+    text-align: center;
+    border-collapse:collapse;
+    float: left;
+    top: 0%; 
+    border-radius: inherit;
+    border: #ccc;
+    /*white-space: nowrap;*/
+}
+li{
+    list-style: none;
+}
+/*============Barra Redes Sociales==========================*/
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .4rem; 
+    text-align: justify;
+}
+.icon-facebook {
+    background: #2E406E;
+}
+.icon-phone {
+    background: #dcf8c6;
+}
+.icon-linkedin {
+    background: #00a0dc;
+}
+.icon-google{
+    background: #E83028;
+}
+/*========================================================*/
