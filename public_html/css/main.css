@@ -3,23 +3,23 @@
    ========================================================================== */
 @charset "UTF-8";
 /*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
-* {
+*{
+    box-sizing: border-box;
+}
+body {
     margin:0;
     padding:0;
+    width: 100%;
+    height: 100%;
     border:0;
     outline:none;
     position: relative;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .estiloFuente{
     font-family: "Georgia, Times New Roman, serif";
-}
-
-div.container {
-    width: 100%;
-    border: 5px solid gray;
 }
 /*==========Estilo Header y footer========================*/
 header {
@@ -28,27 +28,39 @@ header {
     clear: left;
     text-align: center;
     background-position: top;
-    padding: 1em;   
+    padding: 0.4em;
 }
 footer {
-    padding: 1em;
+    background-color: black; 
+    width: 100%;
     color: white;
-    background-color: black;
-    clear: left;
+    float: end;
+    height:64px;
+    margin-top: -64px;
+    clear: both;
     text-align: center;
-    bottom: 0;
 }
-.redondeado {
-  border-radius: 5px;
-  background-color: #def;
+@media only screen and (max-width:620px) /* For mobile phones: */
+{
+    .cabeceraPrincipal, .divContAsidSec, .piePagina{ width: 100%}
 }
 
 /*===============Estilo barra de navegacion de los dropdown====================*/
+aside.container{
+    width: 25%;
+    height: auto;
+    border: 5px solid gray;
+    float: left;
+    clear: left;  
+}
+
 nav {
     float: left;
-    max-width: 250px;
+    width: 100%;
     margin: 0;
     padding: 1em;
+    float: left;
+    clear: left;
 }
 nav ul {
     list-style-type: none;
@@ -58,14 +70,24 @@ nav ul a {
     text-decoration: none;
 }
 /*==========Seccion================*/
-section {
-    width: 79%;
-    /*background: #ccc;*/
-    float: left;
-    overflow: auto;
-    padding-bottom: 60px;
-    padding-top:30px;
+.containerSection {
+    width: 72%;
+    height: 400px;
+    border: 5px solid gray;
+    float: right;
+    clear: right;
+    display: flex;
 }
+iframe { 
+    margin:auto; 
+    padding: auto; 
+    width: 100%;
+    height: 100%; 
+    display:block; 
+    border:none;
+    /*text-align: center;*/
+}
+
 /*============Barra Redes Sociales==========================*/
 .social-bar {
     left: 0;

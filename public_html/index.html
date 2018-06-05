@@ -35,23 +35,26 @@
     </head>    
       
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <header>
+        
+        <header id="cabeceraPrincipal">
            <h1>CEPE <br> <small>Control y Evaluaci&oacute;n del Proceso Escolar</small></h1>
            <figure><img src="img/Escuela.png" width="250" height="100" alt="Escuela"/></figure>
            
            <!-- Barra Redes Sociales -->
             <div class="social-bar">
                 <a href="http://facebook.com/mairelisa.arroyob" class="icon icon-facebook" target="_blank"></a>
-                <a href="#" class="icon icon-twitter" ></a>
+                <a href="WebPages/historiaCentro.html" class="icon icon-twitter" ></a>
                 <a href="#" class="icon icon-youtube" ></a>
                 <a href="#" class="icon icon-linkedin"></a>
              </div> <!-- Final Barra Redes Sociales -->  
         </header>
   
-        <!--Barra de navegacion con bootstrap-->
-        <div class="container">
+        <div style="overflow: auto" id="divContAsidSec"> <!--Contenedor aside y section-->
+             <!--Barra de navegacion con bootstrap-->
+            <aside class="container">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
+                    
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar-1">
                             <span class="sr-only">Men&uacute;</span>
@@ -68,11 +71,11 @@
                              <li class="dropdown"> 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sobre Nosotros <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"></a>Historia</li>
-                                    <li><a href="#"></a>Perfil Institucional</li>
-                                    <li><a href="#"></a>Docentes</li>
+                                    <li><a href="WebPages/historiaCentro.html" target="despliega">Historia</a></li>
+                                    <li><a href="WebPages/PerfilInstitucional.html" target="despliega">Perfil Institucional</a></li>
+                                    <li><a href="WebPages/Docentes.html" target="despliega">Docentes</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#"></a>Reclutamiento</li>
+                                    <li><a href="#">Reclutamiento</a></li>
                                 </ul>
                             </li>
                         </ul>  
@@ -80,7 +83,7 @@
                              <li class="dropdown"> 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alumnos <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"></a>Admisi&oacute;n</li>
+                                    <li><a href="WebPages/Docentes.html" target="despliega">Admisi&oacute;n</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -88,7 +91,7 @@
                              <li class="dropdown"> 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Material Did&aacute;ctico <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"></a>Curr&iacute;culo</li>
+                                    <li><a href="#">Curr&iacute;culo</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -96,23 +99,48 @@
                              <li class="dropdown"> 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacto <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"></a>Enviar Mensaje</li>
-                                    <li><a href="#"></a>Contacto Telef&oacute;nico</li>
-                                    <li><a href="#"></a>Direcci&oacute;n</li>
+                                    <li><a href="#">Enviar Mensaje</a></li>
+                                    <!-- Botón en HTML (lanza el modal en Bootstrap) -->
+                                    <li><a href="#InfTelDirModal" role="button" class="navbar-toggle btn-large btn-primary" data-toggle="modal">Tel&#233;fono y Direcci&oacute;n</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#"></a>&iquest;C&oacute;mo llega&#63;</li>
+                                    <li><a href="#">&iquest;C&oacute;mo llegar&#63;</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav> 
-        </div> <!--Final de la seccion de Barra de navegacion con bootstrap-->
-       
-        <!--Seccion centro para desplegar las otras paginas-->      
+        </aside> <!--Fin barra de navegacion con bootstrap-->
         
-
-        <footer>
+        <!--Desplegar otras paginas-->
+        <section class="containerSection">
+            <iframe name="despliega"></iframe>
+        </section> <!--Fin desplegar otras paginas-->
+            
+        </div> <!--Fin Contenedor aside y section-->
+        
+        <!-- Modal / Ventana con direccion y telefono -->
+        <div id="InfTelDirModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title"><small>Direcci&oacute;n</small> Calle Zaragoza #4</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="modal-title"><small>Tel&#233;fono</small> 34 698 56 77 66</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> <!--Fin ventana Dir y Tel-->
+        
+    
+        <footer id="piePagina">
             <p>Copyright &copy; MAAB 2018</p>
         </footer>
     </body>
