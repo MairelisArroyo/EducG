@@ -28,7 +28,7 @@ header {
     clear: left;
     text-align: center;
     background-position: top;
-    padding: 0.4em;
+    padding: 0.2em;
 }
 footer {
     background-color: black; 
@@ -46,17 +46,21 @@ footer {
 }
 
 /*===============Estilo barra de navegacion de los dropdown====================*/
+.divContAsidSec{
+     margin: auto;
+}
 aside.container{
     width: 25%;
     height: auto;
     border: 5px solid gray;
     float: left;
     clear: left;  
+    margin: auto;
 }
-
 nav {
     float: left;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 1em;
     float: left;
@@ -77,6 +81,7 @@ nav ul a {
     float: right;
     clear: right;
     display: flex;
+    margin: auto;
 }
 iframe { 
     margin:auto; 
@@ -191,27 +196,3 @@ iframe {
     border-radius: 6px 0 6px 6px;
 }
 /*====================================*/
-/* Popover */
-.popover {
-    border: 2px dotted red;
-}
-
-/* Popover Header */
-.popover-title {
-    background-color: #73AD21; 
-    color: #FFFFFF; 
-    font-size: 28px;
-    text-align:center;
-}
-
-/* Popover Body */
-.popover-content {
-    background-color: coral;
-    color: #FFFFFF;
-    padding: 25px;
-}
-
-/* Popover Arrow */
-.arrow {
-    border-right-color: red !important;
-}

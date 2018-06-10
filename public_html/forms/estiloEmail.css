@@ -1,0 +1,110 @@
+/* 
+    Author     : Mairelis Arroyo
+*/
+
+@charset "UTF-8";
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+*{
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    border:0;
+    outline:none;
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #F8F8FF;
+}
+
+.estiloFuente{
+    font-family: "Georgia, Times New Roman, serif";
+}
+@media only screen and (max-width:620px) /* For mobile phones: */
+{
+    .cabeceraPrincipal, .divContAsidSec, .piePagina{ width: 100%}
+}
+/*===============Estilo barra de navegacion de los dropdown====================*/
+header {
+    background-color: #F8F8FF;
+    color: #E9967A;
+    clear: left;
+    text-align: center;
+    background-position: top;
+    padding: 0.2em;
+}
+.divContAsidSec{
+     margin: auto;
+}
+aside.container{
+    width: 65%;
+    height: 500px;
+    border: 0px solid gray;
+    float: top;
+    clear: top;  
+    margin: auto;
+    background-color: white;
+}
+/*==========Seccion================*/
+/*.containerSection {
+    width: 25%;
+    height: 500px;
+    border: 2px solid gray;
+    float: right;
+    clear: right;
+    display: flex;
+    margin: auto;
+}*/
+#ladoIzq{
+    float: left;
+    clear: left;
+    width: 20%;
+    display: inline;
+    margin: auto;
+    height: 400px;
+}
+#ladoDer{
+    float: right;
+    clear: right;
+    width: 80%;
+    text-align: left;
+    height: 400px;
+}
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin: 5px;
+}
+input{
+    width: 500px;
+    height: 2em;
+    border: 1px solid black;
+    maxlength: 50;
+}
+textarea{
+    width: 500px;
+    height: 10em;
+    border: 1px solid black;
+    resize: vertical;
+}
+#btEnviar
+{
+    float:right;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    width: 200px;
+    height: 3em;
+    font: bold .8em sans-serif;
+}
+.icon-upload{
+    background: white;
+}
+/**********************************/
+

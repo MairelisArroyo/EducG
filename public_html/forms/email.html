@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Envio de mensajes</title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">        
+        <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Archivo CSS de Bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">   
+        <link rel="stylesheet" href="../css/bootstrap.css"/>
+        
+        <link rel="stylesheet" href="estiloEmail.css"/>
+        
+        <!--Estilos del pluggin de iconos-->
+        <link rel="stylesheet" href="../icomoon/style.css"/>
+        
+         <!--JavaScript de Bootstrap-->
+         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+        
+       <!-- <script type="text/javascript">
+            $(document).ready(function(){
+                function limpiarInputfile(id) 
+                {
+                    var input = $('#' + id);
+                    var clon = input.clone();  // Creamos un clon del elemento original
+                    input.replaceWith(clon);   // Y sustituimos el original por el clon
+                }
+            }
+            );
+        </script>-->
+</head>
+<body>	
+    
+    <header id="cabeceraPrincipal">
+           <h1>CEPE <br> <small>Control y Evaluaci&oacute;n del Proceso Escolar</small></h1>
+            
+    </header>
+    <br>
+    <br>
+    
+    <form action="enviarEmail.php" method="post">
+        <div style="overflow: auto" class="divContAsidSec"> <!--Contenedor aside y section-->
+             
+       <aside class="container">
+                    <div id="ladoIzq">
+                        <label>Nombre* </label> <br><br>
+                        <label>Correo Electronico* </label> <br><br>
+                        <label>Telefono de contacto </label> <br><br>
+                        <label>Asunto del Mensaje </label> <br><br>
+                        <label>Mensaje* </label> <br><br>
+                        <br><br><br><br><br><br>
+                        
+                        
+                    </div>
+                    <div id="ladoDer">
+                        <input type="text" id="nombre" name="nombre" required maxlength="30"> <br><br>
+                        <input type="email" id="correoEmisor" name="correoEmisor" required autocomplete="off"> <br><br>
+                        <input type="tel" id="telefEmisor" name="telefEmisor"> <br><br>
+                        <input type="text" id="asuntoMens" name="asuntoMens"> <br><br>
+                        <textarea id="mensaje" name="mensaje" maxlength="30" required=""></textarea> <br><br>
+                        
+                        <label for="adjunto" class="icon-upload" style="float: left">Adjuntar Archivo</label>
+                        <input type="file" id="adjuntar" name="adjuntar" style="width: 330px"> 
+                        <!--<input type="button" onclick="limpiarInputFile('adjuntar')" value="Limpiar">-->
+                        
+                        <br><br>
+                        
+                        <input type="button" id="btEnviar"  value="Enviar">   
+                    </div>  
+        </aside> 
+        
+        <!--
+        <section class="containerSection">
+            
+        </section> -->
+            
+        </div> <!--Fin Contenedor aside y section-->        
+    </form>
+
+</body>
+</html>
+ 
+
+<!--
+
+<!--
+<form action="enviarmail.php" method="post">
+		<label>Nombre:</label><input type="text" name="nombre"><br/>
+		<label>Email:</label><input type="text" name="email"><br/>
+		<label>Telefono:</label><input type="text" name="Telefono"><br/>
+		<label>Mensaje:</label><textarea name="mensaje" cols="40" rows="10"></textarea><br/>
+		
+	</form>
+
+ <ul>
+                        <li>
+                            <label for="nombre">Nombre:</label>
+                            <br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <br>
+                            <input type="email" id="mail" name="email" placeholder="E-mail del emisor" required>
+                        </li>
+                        <li>
+                            <label for="mailr">E-mail del receptor:</label>
+                            <br>
+                            <input type="email" id="mailr" name="emailr" placeholder="E-mail del receptor" required>
+                        </li>
+                        <li>
+                            <label for="adjunto">Archivo adjunto</label>
+                            <br>
+                            <input type="file" id="adjunto" name="adjunto" required>
+                        </li>
+                        <li>
+                            <label for="asunto">Asunto:</label>
+                            <br>
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                        </li>
+                        <li>
+                            <label for="msn">Mensaje:</label>
+                            <br>
+                            <textarea name="msn" id="msn" rows="10" required></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Enviar">
+                        </li>
+                    </ul>
+
+-->

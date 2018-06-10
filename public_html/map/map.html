@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Geolocalizacion CEPE</title>
+        <meta charset="UTF-8">
+        
+        <!--************************************************************************-->
+     
+        <!--************************************************************************-->
+     
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC4wrZp0Nr_siFISy4lLL3NraJyrwibfY0"></script>
+    </head>
+    <body>
+        <h1>Mapa</h1>
+        
+        <div id="mapa" style="width: auto; height:  500px;">
+        --Aqui va el mapa--
+        
+        </div>
+        
+        
+        <script type="text/javascript">
+            var divMapa = document.getElementById('mapa');
+            navigator.geolocation.getCurrentPosition (fn_ok, fn_mal);
+            
+            function fn_mal(){}
+            function fn_ok (rta){
+                var lat = rta.coords.latitude;
+                var lon = rta.coords.longitude;
+                
+                var gLatLon = new google.maps.LatLng(lat, lon);
+                var objConfig = {
+                    zoom:17,
+                    center: gLatLon
+                }
+                var gMapa = new google.maps.Map(divMapa, objConfig);
+                var objConfigMarker = {
+                    position: gLatLon,
+                    map: gMapa,
+                    title: "Aquí",
+                    animation: google.maps.Animation.Drop
+                }
+                var gMarker = new google.maps.Marker(objConfigMarker); 
+                
+                var gCoder = new google.maps.Geocoder();
+                var objInformacion = {address: 'Calle Arjona,Sevilla'}
+                gCoder.geocode(objInformacion, fn_coder);
+                
+                function fn_coder (datos){
+                    var coordenadas = datos[0].geometry.location; //obj LatLong
+                    
+                    var config = {
+                        map: gMapa,
+                        position: coordenadas,
+                        title: 'CEPE',
+                        animation: google.maps.Animation.Drop
+                    }
+                    var gMarkerDV = new google.maps.Marker(config)
+                    /*gMarkerDV.setIcon('Escuela.png')*/
+                    var objHTML = {
+                        content: '<div style="height:150px; width:300px"><h2>CEPE</h2><p>Informate</p><a href="../index.html" target="_blank">Aqui</a></p></div>'
+                    }
+                    var gIW = new google.maps.InfoWindow(objHTML);
+                    
+                    google.maps.event.addListener(gMarkerDV, 'click', function(){
+                        gIW.open(gMapa, gMarkerDV);
+                    });
+                }
+                
+                /*****Obtener coordenadas para marcar rutas********/
+                var objConfigDR = {
+                    map: gMapa
+                }
+                var objConfigDS = {
+                    origin: gLatLon, //Latitud longitud, direccion de origen
+                    destination: objInformacion.address,
+                    travelMode: google.maps.TravelMode.WALKING
+                }
+                var ds = new google.maps.DirectionsService(); //Obtener coordenadas
+                var dr = new google.maps.DirectionsRenderer(objConfigDR); //Traduce coordenadas a la ruta visible.
+                ds.route(objConfigDS, fnRutear);
+                
+                function fnRutear(resultados, status){
+                    if(status == 'OK'){
+                        dr.setDirections (resultados);
+                    }else{
+                        alert('Error' + status);
+                    }
+                }
+            }
+           
+        </script>
+    </body>
+</html>

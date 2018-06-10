@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="">        
         <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!--Archivo CSS de Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -22,9 +22,27 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
         
-        <script src="js/main.js"></script>
-       
+       <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();}
+            );
+        </script>
+        
+        <!--<script>
+            function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.12),
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>-->
+        
         <!--jQuery para que funcione bootstrap.min.js-->
         <!--<script src="http://code.jquery.com/jquery-latest.js"></script>       
         <!--librería angular.js
@@ -43,13 +61,13 @@
            <!-- Barra Redes Sociales -->
             <div class="social-bar">
                 <a href="http://facebook.com/mairelisa.arroyob" class="icon icon-facebook" target="_blank"></a>
-                <a href="WebPages/historiaCentro.html" class="icon icon-twitter" ></a>
+                <a href="#" class="icon icon-twitter" ></a>
                 <a href="#" class="icon icon-youtube" ></a>
                 <a href="#" class="icon icon-linkedin"></a>
-             </div> <!-- Final Barra Redes Sociales -->  
+            </div> <!-- Final Barra Redes Sociales -->  
         </header>
   
-        <div style="overflow: auto" id="divContAsidSec"> <!--Contenedor aside y section-->
+        <div style="overflow: auto" class="divContAsidSec"> <!--Contenedor aside y section-->
              <!--Barra de navegacion con bootstrap-->
             <aside class="container">
             <nav class="navbar navbar-default">
@@ -68,7 +86,7 @@
                     
                     <div class="collapse navbar-collapse" id="navbar-1">
                         <ul class="nav navbar-nav">
-                             <li class="dropdown"> 
+                            <li class="dropdown"> 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sobre Nosotros <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="WebPages/historiaCentro.html" target="despliega">Historia</a></li>
@@ -107,12 +125,14 @@
                                         </li>
                                         <li><a href="https://www.google.com/" target="_blank">Google</a></li>
                                         <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-                                        <li class="dropdown-submenu"> <a href="#">Recomendaciones</a>
+                                        <li class="dropdown-submenu"> <a href="#" data-toggle="tooltip" title="Enlaces sobre materiales did&aacute;cticos recomendados">Recomendaciones</a>
                                             <ul class="dropdown-menu"> 
                                                 <li><a href="http://bibliotecaescolardigital.es/comunidad/BibliotecaEscolarDigital" target="_blank" 
-                                                       data-toggle="tooltip" title="Hooray!">Biblioteca Escolar Digital</a></li>
-                                                <li><a href="http://www.buscadorinfantil.com/" target="_blank">Buscador Infantil</a></li>
-                                                <li><a href="http://educalab.es/intef" target="_blank">Instituto de Tecnolog&iacute;as Educativas</a></li>
+                                                       data-toggle="tooltip" title="Materiales educativos multimedia">Biblioteca Escolar Digital</a></li>
+                                                <li><a href="http://www.buscadorinfantil.com/" target="_blank"
+                                                       data-toggle="tooltip" title="Selecci&oacute;n de enlaces filtrados y adaptados para el p&uacute;blico infantil y escolar">Buscador Infantil</a></li>
+                                                <li><a href="http://educalab.es/intef" target="_blank"
+                                                       data-toggle="tooltip" title="Recursos digitales y de formaci&oacute;n del profesorado sobre las TIC">Instituto de Tecnolog&iacute;as Educativas</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -123,11 +143,11 @@
                              <li class="dropdown"> 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacto <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Enviar Mensaje</a></li>
+                                    <li><a href="forms/email.html" target="_blank">Enviar Mensaje</a></li>
                                     <!-- Botón en HTML (lanza el modal en Bootstrap) -->
-                                    <li><a href="#InfTelDirModal" role="button" class="navbar-toggle btn-large btn-primary" data-toggle="modal">Tel&#233;fono y Direcci&oacute;n</a></li>
+                                    <li><a href="#InfTelDirModal" role="button" class="navbar-toggle btn-large" data-toggle="modal">Tel&#233;fono y Direcci&oacute;n</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">&iquest;C&oacute;mo llegar&#63;</a></li>
+                                    <li><a href="map/map.html" target="_blank">&iquest;C&oacute;mo llegar&#63;</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -150,7 +170,7 @@
                     
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h3 class="modal-title"><small>Direcci&oacute;n</small> Calle Zaragoza #4</h3>
+                        <h3 class="modal-title"><small>Direcci&oacute;n</small> Calle Zaragoza #4, Sevilla, Espa&ntilde;a</h3>
                     </div>
                     <div class="modal-body">
                         <h3 class="modal-title"><small>Tel&#233;fono</small> 34 698 56 77 66</h3>
@@ -161,7 +181,26 @@
                     
                 </div>
             </div>
-        </div> <!--Fin ventana Dir y Tel-->
+        </div> <!--Fin ventana modal Dir y Tel-->
+        
+         <!-- Modal / Ventana con mapa -->
+        <div id="googleMap" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                       
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> <!--Fin Modal / Ventana con mapa-->
         
     
         <footer id="piePagina">
