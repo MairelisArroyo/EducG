@@ -10,12 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!--Archivo CSS de Bootstrap-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">   
         <link rel="stylesheet" href="../css/bootstrap.css"/>
         
-        <link rel="stylesheet" href="estiloEmail.css"/>
+        <link rel="stylesheet" href="../css/estiloEmail.css"/>
         
         <!--Estilos del pluggin de iconos-->
         <link rel="stylesheet" href="../icomoon/style.css"/>
@@ -26,7 +25,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
         
-       <!-- <script type="text/javascript">
+       <!-- <script>
             $(document).ready(function(){
                 function limpiarInputfile(id) 
                 {
@@ -58,9 +57,8 @@
                         <label>Asunto del Mensaje </label> <br><br>
                         <label>Mensaje* </label> <br><br>
                         <br><br><br><br><br><br>
-                        
-                        
                     </div>
+           
                     <div id="ladoDer">
                         <input type="text" id="nombre" name="nombre" required maxlength="30"> <br><br>
                         <input type="email" id="correoEmisor" name="correoEmisor" required autocomplete="off"> <br><br>
@@ -70,27 +68,19 @@
                         
                         <label for="adjunto" class="icon-upload" style="float: left">Adjuntar Archivo</label>
                         <input type="file" id="adjuntar" name="adjuntar" style="width: 330px"> 
-                        <!--<input type="button" onclick="limpiarInputFile('adjuntar')" value="Limpiar">-->
+                        <!--<input type="button" onclick="limpiarInputFile('#adjuntar')" class="icon icon-cross" style="width:50px; height:30px; background-color: white" >-->
                         
                         <br><br>
                         
                         <input type="button" id="btEnviar"  value="Enviar">   
                     </div>  
         </aside> 
-        
-        <!--
-        <section class="containerSection">
             
-        </section> -->
-            
-        </div> <!--Fin Contenedor aside y section-->        
+        </div> <!--Fin Contenedor aside -->        
     </form>
 
 </body>
 </html>
- 
-
-<!--
 
 <!--
 <form action="enviarmail.php" method="post">
@@ -100,41 +90,4 @@
 		<label>Mensaje:</label><textarea name="mensaje" cols="40" rows="10"></textarea><br/>
 		
 	</form>
-
- <ul>
-                        <li>
-                            <label for="nombre">Nombre:</label>
-                            <br>
-                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                        </li>
-                        <li>
-                            <label for="mail">E-mail:</label>
-                            <br>
-                            <input type="email" id="mail" name="email" placeholder="E-mail del emisor" required>
-                        </li>
-                        <li>
-                            <label for="mailr">E-mail del receptor:</label>
-                            <br>
-                            <input type="email" id="mailr" name="emailr" placeholder="E-mail del receptor" required>
-                        </li>
-                        <li>
-                            <label for="adjunto">Archivo adjunto</label>
-                            <br>
-                            <input type="file" id="adjunto" name="adjunto" required>
-                        </li>
-                        <li>
-                            <label for="asunto">Asunto:</label>
-                            <br>
-                            <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
-                        </li>
-                        <li>
-                            <label for="msn">Mensaje:</label>
-                            <br>
-                            <textarea name="msn" id="msn" rows="10" required></textarea>
-                        </li>
-                        <li>
-                            <input type="submit" value="Enviar">
-                        </li>
-                    </ul>
-
 -->

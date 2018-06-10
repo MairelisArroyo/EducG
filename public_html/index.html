@@ -24,31 +24,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
         
-       <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
-        
-        <script type="text/javascript">
+        <script>
             $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();}
             );
         </script>
-        
-        <!--<script>
-            function myMap() {
-                var mapOptions = {
-                    center: new google.maps.LatLng(51.5, -0.12),
-                    zoom: 10,
-                    mapTypeId: google.maps.MapTypeId.HYBRID
-                }
-                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-            }
-        </script>-->
-        
-        <!--jQuery para que funcione bootstrap.min.js-->
-        <!--<script src="http://code.jquery.com/jquery-latest.js"></script>       
-        <!--librería angular.js
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        -->
-        
+       
         <title>cepe-educ</title>
     </head>    
       
@@ -89,9 +70,9 @@
                             <li class="dropdown"> 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sobre Nosotros <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="WebPages/historiaCentro.html" target="despliega">Historia</a></li>
-                                    <li><a href="WebPages/PerfilInstitucional.html" target="despliega">Perfil Institucional</a></li>
-                                    <li><a href="WebPages/Docentes.html" target="despliega">Docentes</a></li>
+                                    <li><a href="forms/historiaCentro.html" target="despliega">Historia</a></li>
+                                    <li><a href="forms/PerfilInstitucional.html" target="despliega">Perfil Institucional</a></li>
+                                    <li><a href="forms/Docentes.html" target="despliega">Docentes</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#">Reclutamiento</a></li>
                                 </ul>
@@ -101,7 +82,7 @@
                              <li class="dropdown"> 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Alumnos <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="WebPages/Docentes.html" target="despliega">Admisi&oacute;n</a></li>
+                                    <li><a href="forms/Docentes.html" target="despliega">Admisi&oacute;n</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -147,7 +128,7 @@
                                     <!-- Botón en HTML (lanza el modal en Bootstrap) -->
                                     <li><a href="#InfTelDirModal" role="button" class="navbar-toggle btn-large" data-toggle="modal">Tel&#233;fono y Direcci&oacute;n</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="map/map.html" target="_blank">&iquest;C&oacute;mo llegar&#63;</a></li>
+                                    <li><a href="forms/map.html" target="_blank">&iquest;C&oacute;mo llegar&#63;</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -160,8 +141,14 @@
         <section class="containerSection">
             <iframe name="despliega"></iframe>
         </section> <!--Fin desplegar otras paginas-->
-            
+      
         </div> <!--Fin Contenedor aside y section-->
+        
+        <div class="container" id="divFooter">
+            <footer id="piePagina">
+                <p>Copyright &copy; MAAB 2018</p>
+            </footer>   
+        </div>
         
         <!-- Modal / Ventana con direccion y telefono -->
         <div id="InfTelDirModal" class="modal fade">
@@ -182,30 +169,10 @@
                 </div>
             </div>
         </div> <!--Fin ventana modal Dir y Tel-->
+   
+       
+
         
-         <!-- Modal / Ventana con mapa -->
-        <div id="googleMap" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    
-                    <div class="modal-header">
-                       
-                    </div>
-                    <div class="modal-body">
-                        
-                    </div>
-                    <div class="modal-footer">
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </div> <!--Fin Modal / Ventana con mapa-->
-        
-    
-        <footer id="piePagina">
-            <p>Copyright &copy; MAAB 2018</p>
-        </footer>
     </body>
 </html>
 

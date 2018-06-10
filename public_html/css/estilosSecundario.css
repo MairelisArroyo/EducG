@@ -4,7 +4,6 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Jun 2, 2018, 4:44:35 AM
     Author     : Mairelis Arroyo
 */
 
@@ -23,34 +22,50 @@ h2{
 p{
     text-align: justify;
 }
-section {
-    width: 70%;
-    /*background: #ccc;*/
-    float: left;
-    overflow: auto;
+#sectHistoria{
+    width: 800px;
     padding-bottom: 60px;
-    padding-top:30px;
-    position: absolute;
-    text-align: justify;   
+    padding-top:40px;
+    margin: 0px auto;
+    text-align: center;
+}
+#sectDocente{
+    width: 800px;
+    padding-bottom: 60px;
+    padding-top:40px;
+    margin: 0px auto;
+    text-align: left;
+}
+#sectInstitucion{
+    width: 60%;
+    padding-bottom: 60px;
+    padding-top:40px;
+    margin: 0px auto;
+    text-align: left;
+    float: left;
+
 }
 aside {
     float: right;
-    width: 25%;
-    border: 2px solid #cccccc;
+    width: 35%;
+    border-left: 2px solid #cccccc;
     text-align: justify;
-    /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+    padding-bottom: 60px;
+    padding-top:40px;
+    
     /*visibility: hidden;*/
 }
 figure {
-    display: table; margin: 0 auto;
+    display: table; 
+    margin: 0 auto;
 }
 .imagenDocentes{
     width: 100px;
     height: 100px;
 }
-td{
+/*td{
      border: 1px solid black;
-}
+}*/
 .tableDocentes {
     width: auto;
     text-align: center;
@@ -69,7 +84,7 @@ li{
     color: white;
     text-decoration: none;
     padding: .4rem; 
-    text-align: justify;
+    text-align: left;
 }
 .icon-facebook {
     background: #2E406E;
