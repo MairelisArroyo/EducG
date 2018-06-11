@@ -38,56 +38,41 @@
         </script>-->
 </head>
 <body>	
-    
     <header id="cabeceraPrincipal">
-           <h1>CEPE <br> <small>Control y Evaluaci&oacute;n del Proceso Escolar</small></h1>
-            
+        <h1>CEPE <br> <small>Control y Evaluaci&oacute;n del Proceso Escolar</small></h1>     
     </header>
     <br>
     <br>
     
-    <form action="enviarEmail.php" method="post">
-        <div style="overflow: auto" class="divContAsidSec"> <!--Contenedor aside y section-->
-             
-       <aside class="container">
-                    <div id="ladoIzq">
-                        <label>Nombre* </label> <br><br>
-                        <label>Correo Electronico* </label> <br><br>
-                        <label>Telefono de contacto </label> <br><br>
-                        <label>Asunto del Mensaje </label> <br><br>
-                        <label>Mensaje* </label> <br><br>
-                        <br><br><br><br><br><br>
-                    </div>
-           
-                    <div id="ladoDer">
-                        <input type="text" id="nombre" name="nombre" required maxlength="30"> <br><br>
-                        <input type="email" id="correoEmisor" name="correoEmisor" required autocomplete="off"> <br><br>
-                        <input type="tel" id="telefEmisor" name="telefEmisor"> <br><br>
-                        <input type="text" id="asuntoMens" name="asuntoMens"> <br><br>
-                        <textarea id="mensaje" name="mensaje" maxlength="30" required=""></textarea> <br><br>
-                        
-                        <label for="adjunto" class="icon-upload" style="float: left">Adjuntar Archivo</label>
-                        <input type="file" id="adjuntar" name="adjuntar" style="width: 330px"> 
-                        <!--<input type="button" onclick="limpiarInputFile('#adjuntar')" class="icon icon-cross" style="width:50px; height:30px; background-color: white" >-->
-                        
-                        <br><br>
-                        
-                        <input type="button" id="btEnviar"  value="Enviar">   
-                    </div>  
-        </aside> 
-            
-        </div> <!--Fin Contenedor aside -->        
-    </form>
+    <div style="overflow: auto" class="divContAsidSec"> <!--Contenedor aside y section-->
+        <form action="enviarEmail.php" method="post">             
+            <aside class="container">
+                <div id="ladoIzq">
+                    <label>Nombre* </label> <br><br>
+                    <label>Correo Electronico* </label> <br><br>
+                    <label>Telefono de contacto </label> <br><br>
+                    <label>Asunto del Mensaje </label> <br><br>
+                    <label>Mensaje* </label> <br><br>
+                    <br><br><br><br><br><br>
+                </div>
+
+                <div id="ladoDer">
+                    <input type="text" id="nombre" name="nombre" required maxlength="30"> <br><br>
+                    <input type="email" id="correoEmisor" name="correoEmisor" required autocomplete="off"> <br><br>
+                    <input type="tel" id="telefEmisor" name="telefEmisor"> <br><br>
+                    <input type="text" id="asuntoMens" name="asuntoMens"> <br><br>
+                    <textarea id="mensaje" name="mensaje" maxlength="30" required=""></textarea> <br><br>
+
+                    <label for="adjunto" class="icon-upload" style="float: left">Adjuntar Archivo</label>
+                    <input type="file" id="adjuntar" name="adjuntar" style="width: 330px"> 
+                    <!--<input type="button" onclick="limpiarInputFile('#adjuntar')" class="icon icon-cross" style="width:50px; height:30px; background-color: white" >-->
+                    <br><br>
+                    <input type="button" id="btEnviar"  value="Enviar">   
+                </div>  
+            </aside> 
+        </form>  
+    </div> <!--Fin Contenedor aside -->        
+
 
 </body>
 </html>
-
-<!--
-<form action="enviarmail.php" method="post">
-		<label>Nombre:</label><input type="text" name="nombre"><br/>
-		<label>Email:</label><input type="text" name="email"><br/>
-		<label>Telefono:</label><input type="text" name="Telefono"><br/>
-		<label>Mensaje:</label><textarea name="mensaje" cols="40" rows="10"></textarea><br/>
-		
-	</form>
--->

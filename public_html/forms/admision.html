@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="">        
+        <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Archivo CSS de Bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">   
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        
+        <link rel="stylesheet" href="../css/estilosSecundario.css"/>
+        
+        <!--Estilos del pluggin de iconos-->
+        <link rel="stylesheet" href="icomoon/style.css"/>
+        
+         <!--JavaScript de Bootstrap-->
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+    </head>
+    <body> 
+        <div style="overflow: auto" class="divAdmision"> <!--Contenedor aside y section-->
+            <form style="font-size: 0.8em">
+                <h1>Formulario de Admision Escolar</h1>
+               
+                    <div id="ladoIzq">
+                        <label>Nombre* </label> <br><br><br>
+                        <label>Apellido* </label> <br><br><br>
+                        <label>Fecha de Nacimiento* </label> <br><br><br>
+                        <label>Nombre del padre, madre, tutor o encargado* </label> <br><br><br>
+                        
+                        <label>Direccion* </label> <br><br><br>  
+                        <label>Telefono de contacto </label> <br><br><br>
+                        <label>Correo Electronico* </label> <br><br><br>
+                        
+                        <label>Curso al que desea ingresar* </label> <br><br><br>
+                        <input type="checkbox" id="segundoGrado" value="Primer Nivel - 2do Grado">Primer Nivel - 2do Grado <br>
+                        <input type="checkbox" id="segundoGrado" value="Segundo Nivel - 7mo Grado" >Segundo Nivel - 7mo Grado                       
+                        
+                    </div>
+                    <div id="ladoDer" >
+                        <input type="text" id="nombre" name="nombre" required maxlength="30"> <br><br><br>
+                        <input type="text" id="apellido" name="apellido" required maxlength="30"> <br><br><br>
+                        <input type="date" id="fechNac" name="fechNac" required> <br><br><br><br>
+                        <input type="text" id="nombreTutor" name="nombreTutor" required maxlength="30"> <br><br><br>
+                        
+                        <input type="text" id="direccion" name="direccion" required maxlength="50"> <br><br><br>
+                        <input type="tel" id="telefono" name="telefono" required> <br><br><br>
+                        <input type="email" id="email" name="email" required> <br><br><br>
+                       
+                        <input type="button" id="btEnviar"  value="Enviar"> 
+                    </div> 
+                    
+            </form>            
+        </div> <!--Fin Contenedor aside -->        
+    </body>
+</html>
