@@ -19,9 +19,6 @@ body {
     font-size: 1.5em;
  
 }
-.estiloFuente{
-    font-family: "Georgia, Times New Roman, serif";
-}
 @media only screen and (max-width:620px) /* For mobile phones: */
 {
     .cabeceraPrincipal, .divContAsidSec, .piePagina{ width: 100%}

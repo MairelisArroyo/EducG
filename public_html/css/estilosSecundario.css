@@ -31,6 +31,8 @@ header{
     text-align: center;
     background-position: top;
     padding: 1em;   
+    border: 3px solid white;
+    height: 90px;
 }
 h2{
     text-align: center;
@@ -115,47 +117,53 @@ li{
     background: #E83028;
 }
 /*===============Estilos Form Admision=========================================*/
-h1{
+#h2Admision{
     text-align: center;
-    font-size: 1.1em
+    font-size: 0.8em;
+   margin: 0%;
 }
-#ladoIzq{
+#sectAdmision{
+    width: 1000px;
+    height: auto;
+    padding-bottom: 60px;
+    padding-top:40px;
+    margin: 0px auto;
+    text-align: center;
+    /*border: 5px solid gray;*/
     float: left;
-    clear: left;
-    width: 35%;
-    display: inline;
-    margin: auto;
-    height: auto;
 }
-#ladoDer{
-    float: right;
-    clear: right;
-    width: 65%;
-    text-align: left;
-    height: auto;
+#secDatos, #secContacto, #secNivel{
+    width: 90%;
+    margin: .6em;
+   /* border: .5px solid grey;*/
+    text-align: justify;
 }
-label {
-    display: inline-block;
+.label1 {
+    display:inline-table;
     width: 230px;
     text-align: right;
-    margin: 5px;
-    float: left;
-    clear: left;
+    margin: 0;
 }
-input{
-    width: 500px;
-    height: 2em;
+.inputTexEmaDatTel{
+    display:inline-table;
+    width: 400px;
+    height: 2.3em;
     border: 1px solid black;
     maxlength: 50;
-    margin: 5px;
-    float: right;
-    clear: righ;
+    margin: 0;
 }
-input.checkbox{
-    float: right;
-    clear: righ;
+input[type=radio]{
+    height:15px; 
+    width:15px;
+    vertical-align:middle;
+    margin: 3px;
+    position: inherit;
 }
-#btEnviar
+.divRadio{
+    width: 90%;
+    margin-left: 16em;
+}
+#btEnviarAdmision
 {
     float:right;
     border: 2px solid #333;
@@ -166,11 +174,3 @@ input.checkbox{
     height: 3em;
     font: bold .8em sans-serif;
 }
-/*
-
-
-
-
-
-
-*/

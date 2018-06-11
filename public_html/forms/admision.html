@@ -30,40 +30,57 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
     </head>
-    <body> 
-        <div style="overflow: auto" class="divAdmision"> <!--Contenedor aside y section-->
-            <form style="font-size: 0.8em">
-                <h1>Formulario de Admision Escolar</h1>
-               
-                    <div id="ladoIzq">
-                        <label>Nombre* </label> <br><br><br>
-                        <label>Apellido* </label> <br><br><br>
-                        <label>Fecha de Nacimiento* </label> <br><br><br>
-                        <label>Nombre del padre, madre, tutor o encargado* </label> <br><br><br>
-                        
-                        <label>Direccion* </label> <br><br><br>  
-                        <label>Telefono de contacto </label> <br><br><br>
-                        <label>Correo Electronico* </label> <br><br><br>
-                        
-                        <label>Curso al que desea ingresar* </label> <br><br><br>
-                        <input type="checkbox" id="segundoGrado" value="Primer Nivel - 2do Grado">Primer Nivel - 2do Grado <br>
-                        <input type="checkbox" id="segundoGrado" value="Segundo Nivel - 7mo Grado" >Segundo Nivel - 7mo Grado                       
-                        
+    <body>
+        <header>
+            <h2 id="h2Admision" style="text-align: center; font-size: 0.8em">Formulario de Admision Escolar<br>
+                <small>Ingresar los datos pedidos a continuacion</small></h2>
+        </header>
+           
+         <section id="sectAdmision" class="container">
+             
+             <form style="font-size: 0.6em">
+
+                <div id="secDatos">
+                    <label class="label1">Nombre* </label> 
+                    <input type="text" id="nombre" name="nombre" required class="inputTexEmaDatTel"> <br><br>
+
+                    <label class="label1">Apellido* </label> 
+                    <input type="text" id="apellido" name="apellido" required class="inputTexEmaDatTel"> <br><br>
+
+                    <label class="label1">Fecha de Nacimiento* </label>
+                    <input type="date" id="fechNac" name="fechNac" required class="inputTexEmaDatTel"> <br><br>
+
+                    <label class="label1">Nombre del padre, madre, tutor o encargado* </label>
+                    <input type="text" id="nombreTutor" name="nombreTutor" required class="inputTexEmaDatTel"> <br><br>
+                </div>
+
+                <div id="secContacto">
+                    <label class="label1">Direccion* </label>
+                    <input type="text" id="direccion" name="direccion" required class="inputTexEmaDatTel"> <br><br>
+
+                    <label class="label1">Telefono de contacto </label>
+                    <input type="tel" id="telefono" name="telefono" required class="inputTexEmaDatTel"> <br><br>
+
+                    <label class="label1">Correo Electronico* </label> 
+                    <input type="email" id="email" name="email" required class="inputTexEmaDatTel"> <br>
+                </div>
+
+                <div id="secNivel">
+                    <label class="label1">Curso al que desea ingresar* </label> 
+                     <div class="radio divRadio"> 
+                        <input type="radio" name="radio1" id="radio1"><label for="radio1">Nivel basico - Primero</label> 
                     </div>
-                    <div id="ladoDer" >
-                        <input type="text" id="nombre" name="nombre" required maxlength="30"> <br><br><br>
-                        <input type="text" id="apellido" name="apellido" required maxlength="30"> <br><br><br>
-                        <input type="date" id="fechNac" name="fechNac" required> <br><br><br><br>
-                        <input type="text" id="nombreTutor" name="nombreTutor" required maxlength="30"> <br><br><br>
-                        
-                        <input type="text" id="direccion" name="direccion" required maxlength="50"> <br><br><br>
-                        <input type="tel" id="telefono" name="telefono" required> <br><br><br>
-                        <input type="email" id="email" name="email" required> <br><br><br>
-                       
-                        <input type="button" id="btEnviar"  value="Enviar"> 
-                    </div> 
-                    
-            </form>            
-        </div> <!--Fin Contenedor aside -->        
+                    <div class="radio divRadio"> 
+                        <input type="radio" name="radio2" id="radio2"><label for="radio2">Nivel basico - Segundo</label> 
+                    </div>
+                    <div class="radio divRadio"> 
+                        <input type="radio" name="radio7" id="radio7"><label for="radio7">Nivel Medio - Septimo</label> 
+                    </div>
+                </div>
+                 <div>
+                     <input type="button" id="btEnviarAdmision"  value="Enviar">
+                 </div>
+            </form>                 
+        </section>
     </body>
 </html>
