@@ -174,3 +174,9 @@ input[type=radio]{
     height: 3em;
     font: bold .8em sans-serif;
 }
+.geolocalizacionMap{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 400px;
+}

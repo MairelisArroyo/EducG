@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="es">
     <head>
         <title>Geolocalizacion CEPE</title>
         <meta charset="UTF-8">
@@ -12,7 +12,20 @@ and open the template in the editor.
         <meta name="description" content="">        
         <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--************************************************************************-->     
+        <!--************************************************************************--> 
+        <!--Archivo CSS de Bootstrap-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">   
+        <link rel="stylesheet" href="../css/bootstrap.css"/>
+        
+        <link rel="stylesheet" href="../css/estilosSecundario.css"/>
+        
+         <!--JavaScript de Bootstrap-->
+         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"> </script>
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"> </script>
+         
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <!--************************************************************************-->
      
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC4wrZp0Nr_siFISy4lLL3NraJyrwibfY0"></script>
@@ -20,9 +33,12 @@ and open the template in the editor.
     <body>
         <h1>Mapa</h1>
         
-        <div id="mapa" style="width: auto; height:  500px;">
-        --Aqui va el mapa--
-        
+        <div class="container-fluid">
+            <div class="geolocalizacionMap" id="mapa" style="width: auto; height:  500px;">
+                --Aqui va el mapa--
+                <p>Habilite el GPS de su movil</p>
+                
+            </div>
         </div>
         
         <script type="text/javascript">

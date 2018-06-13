@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+        <title>Envio de email - CEPE-</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">        
+        <!--Para garantizar la generación de gráficos correcta y un funcionamiento correcto de zoom de toque de pantalla-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="stylesheet" href="../formEmail/estiloFormEmail.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        
+        
+          <!--
+              <?php
+        if(isset ($_REQUEST['s']))
+        {
+            $ok = $_REQUEST['s'];
+            
+            if($ok == 'si')
+            {
+                echo "<div class='msn-ok'>¡Mensaje enviado correctamente!</div>";
+            }
+            elseif($ok == 'no')
+            {
+                echo "<div class='msn-ko'>Ha habido un error de envio...</div>";
+            }
+        }
+    ?>
+          -->
+</head>
+<body>
+    <div id="container">
+        <h1>Envio de emails - <a href="../index.html">MABB</a></h1>
+          
+            <form action="../formEmail/send.php" method="post" enctype="multipart/form-data">
+            <div id="contLabInp">
+               
+                <ul>
+                        <li>
+                            <label for="nombre">Nombre:</label>
+                            <br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <br>
+                            <input type="email" id="mail" name="email" placeholder="E-mail del emisor" required>
+                        </li>
+                        <!--<li>
+                            <label for="adjunto">Archivo adjunto</label>
+                            <br>
+                            <input type="file" id="adjunto" name="adjunto">
+                        </li>-->
+                        <li>
+                            <label for="asunto">Asunto:</label>
+                            <br>
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+                        </li>
+                        <li>
+                            <label for="msn">Mensaje:</label>
+                            <br>
+                            <textarea name="msn" id="mensaje" rows="10" required></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Enviar">
+                        </li>
+                    </ul>
+            </div>
+        </form>
+    </div>
+
+    <!-- jQuery -->
+   
+    <script>
+    $(document).ready(function(){
+            $('form').submit(function(){
+                    if($('input[type="text"]').val() == '' || $('input[type="email"]').val() == '' || $('textarea').val() == '')
+                    {
+                            alert('Rellena todos los campos');
+                            return false;
+                    }
+            });
+    });
+    </script>
+
+</body>
+</html>
+
+<!--if($('input[type="text"]').val() == '' || $('input[type="email"]').val() == '' || $('input[type="file"]').val() == '' || $('textarea').val() == ''){-->
