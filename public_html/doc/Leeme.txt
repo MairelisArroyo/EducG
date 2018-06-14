@@ -1,0 +1,29 @@
+La página web propuesta consiste en una página que simula un visualizador de los procesos educativos efectuados en un centro escolar. 
+
+Por medio de una barra de navegación en la sección izquierda se visualiza lo ofrecido por el centro educativo a los usuarios, que comúnmente serian padres y estudiantes interesados en ser admitidos al centro. La barra permite la navegación por los formularios que ofrecen información sobre el centro, como son la historia, el equipo que labora; lleva a ciertos materiales didácticos para uso libre, un formulario de admisión de los interesados. Y el contacto con el centro educativo, como el teléfono y dirección y un mapa localizador del centro.
+
+En este proyecto se hace uso del IDE de desarrollo Netbeans, creándose una aplicación de html5, para proporcionar el diseño se usan diferentes clases y atributos del framework bootstrap, en cuanto a las funcionalidades de jquery, en el formulario index se hace uso de la función de bootstrap tooltip manejada por jquery.
+
+Otra funcionalidad que ofrece esta aplicación es que indica la geolocalización del centro por medio de la librería de google HTML5 Geolocation la cual es configurada con javascript para que a raíz de la ubicación indique como llegar al centro educativo.
+
+Inicio
+
+Centro Educativo
+- Historia
+- Perfil Institucional
+- Equipo Educativo
+- Ofertas laborales
+
+Material didáctico
+-  Referencias Electrónicas
+- Currículo Educativo
+
+Alumnos
+-  Admisión de alumnos
+
+Contacto.
+- Teléfono.
+- Dirección.
+- Cómo llegar?
+- Enviar Mensaje.
+
